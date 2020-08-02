@@ -10,8 +10,7 @@
 </template>
 <script>
 import $ from "jquery";
-import '@assets/js/jquery.dataTables.js';
-import '@assets/js/dataTables.bootstrap4.min.js';
+import 'datatables.net/js/jquery.dataTables.js';
 
 export default {    
 	name: 'VueJsDatatable',
@@ -114,6 +113,3 @@ export default {
 	}
 }
 </script>
-<style>
-@import '~@assets/css/dataTables.bootstrap4.min.css';
-</style>
