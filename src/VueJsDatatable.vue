@@ -55,9 +55,9 @@ export default {
             type: Boolean,
             default: true
 		},
-		authorization: {
-			type: String,
-			default: this.$store.getters['auth/authHeaders'].Authorization
+		headers: {
+			type: Object,
+			default: () => {}
 		}
 	},
 	data() {
@@ -81,7 +81,9 @@ export default {
 		        'url': this.url,
 		        'type' : this.type,
 		        "beforeSend": (xhr) => {
-		            xhr.setRequestHeader("Authorization", this.authorization)
+					for (var key of Object.keys(this.headers)) {
+						xhr.setRequestHeader(key, this.headers[key])
+					}
 		         }
 		    },
 	      	"columns": this.columns,
