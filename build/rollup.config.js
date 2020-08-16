@@ -31,7 +31,13 @@ const config = {
         isProduction: true
       }
     }),
-    buble()
+    buble({
+      objectAssign: "Object.assign",
+      transforms: {
+        modules: false,
+        forOf: false,
+      },
+    })
   ]
 };
 
