@@ -81,8 +81,10 @@ export default {
 		        'url': this.url,
 		        'type' : this.type,
 		        "beforeSend": (xhr) => {
-					for (var key of Object.keys(this.headers)) {
-						xhr.setRequestHeader(key, this.headers[key])
+					if(this.headers) {
+						for (var key of Object.keys(this.headers)) {
+							xhr.setRequestHeader(key, this.headers[key])
+						}
 					}
 		         }
 		    },
