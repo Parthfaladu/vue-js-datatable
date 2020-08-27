@@ -10,28 +10,25 @@ Or using yarn
 yarn add @parthfaladu/vue-js-datatable -dev
 ```
 
-For Installing plugin import `full-calendar` in your component page.
+For Installing plugin import `vue-js-datatable` in your component page.
 
 ```js
 //foo.vue
-import VueJqueryCalendar from 'vue-jquery-calendar';
+import VueJsDatatable from "@parthfaladu/vue-js-datatable";
 export default {
   components: {
-    VueJqueryCalendar,
+    VueJsDatatable,
   },
 }
 ```
 
 ### Note
 
-Please note that this package depends on `jQuery` and `jquery.dataTables.js`, but you won't need to add it to your project manually, `vue-jquery-calendar` will handle this for you automatically if this dependencies are not detected.
+Please note that this package depends on `jQuery` and `jquery.dataTables.js`, but you won't need to add it to your project manually, `vue-js-datatable` will handle this for you automatically if this dependencies are not detected.
 
 
 ### CSS
 For styling of the table import datatable css file.
-
-## Example App
- try out this [Code Sandbox]()
 
 
 ## Basic Usage
@@ -39,13 +36,18 @@ For styling of the table import datatable css file.
 You can pass an array of fullclendar objects through the props
 
 ```html
-<VueJsDatatable :url="url" type="post" :columns="columns" @gaction="onAction"></VueJsDatatable>
+<VueJsDatatable :url="url" type="post" :columns="columns" @gaction="onAction">
+    <th>ID</th>
+    <th>name</th>
+    <th>City</th>
+    <th>Action</th>
+</VueJsDatatable>
 ...
 <script>
 import VueJsDatatable from '@parthfaladu/vue-js-datatable';
 ...
   components: {
-		VueJsDatatable,
+	VueJsDatatable,
   },
   data() {
     return {
