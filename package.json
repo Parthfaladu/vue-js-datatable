@@ -1,9 +1,9 @@
 {
   "name": "@parthfaladu/vue-js-datatable",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "author": "Parth Faladu",
   "description": "A Vue.js wrapper component for jquery datatable.",
-  "license": "MIT",
+  "license": "ISC",
   "main": "dist/VueJsDatatable.umd.js",
   "module": "dist/VueJsDatatable.esm.js",
   "unpkg": "dist/VueJsDatatable.min.js",
@@ -35,6 +35,13 @@
     "datatables.net": "^1.10.21",
     "jquery": "3.4.1"
   },
+  "homepage": "https://github.com/Parthfaladu/vue-js-datatable#readme",
+  "keywords": [
+    "vue",
+    "datatable",
+    "datatable.net",
+    "table"
+  ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
     "@vue/cli-plugin-eslint": "^4.2.0",

@@ -9,9 +9,9 @@
 	</table>
 </template>
 <script>
-window.$ = window.jQuery = require( 'jquery' );
+global.$ = global.jQuery = require( 'jquery' );
 import datatable from 'datatables.net';
-window.$.fn.DataTable = datatable;
+global.$.fn.DataTable = datatable;
 
 export default {    
 	name: 'VueJsDatatable',
