@@ -1,6 +1,8 @@
 # vue-js-datatable
 [![npm version](https://badge.fury.io/js/%40parthfaladu%2Fvue-js-datatable.svg)](https://badge.fury.io/js/%40parthfaladu%2Fvue-js-datatable)
 
+`vue-js-datatable` is wrapper vue package of `datatables.net`
+
 ## Installation
 ```
 npm install --save @parthfaladu/vue-js-datatable
@@ -56,22 +58,19 @@ import VueJsDatatable from '@parthfaladu/vue-js-datatable';
           {data:'name', name:'name' , width:"300px"},
           {data:'city', name:'city' , width:"200px"},
           {data:(data) => {
-					  return "<button class='btn btn-outline-alternate' data-g-action='view' data-g-actiondata="+data.id+">Edit</button> <button class='btn btn-outline-danger' data-g-action='delete' data-g-actiondata="+data.id+">Delete</button>";
-	        }, name:'action', width:"150px"}
-		    ],
-			  url: 'https://example.com/api/v1/get/user'
+		return "<button class='btn btn-outline-alternate' data-g-action='view' data-g-actiondata="+data.id+">Edit</button>";
+	  }, name:'action', width:"150px"}
+	],
+	url: 'https://example.com/api/v1/get/user'
     }
   },
   ...
   methods: {
     onAction(action) {
-			if(action.action === 'view') {
-				console.log('view button click.');
-			}
-			if(action.action === 'delete'){
-				console.log('delete button click.');
-			}
-		}
+	if(action.action === 'view') {
+		console.log('view button click.');
+	}
+    }
   }
 ...
 </script>
