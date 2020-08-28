@@ -1,6 +1,8 @@
 # vue-js-datatable
 [![npm version](https://badge.fury.io/js/%40parthfaladu%2Fvue-js-datatable.svg)](https://badge.fury.io/js/%40parthfaladu%2Fvue-js-datatable)
 
+`vue-js-datatable` is wrapper vue package of `datatables.net`
+
 ## Installation
 ```
 npm install --save @parthfaladu/vue-js-datatable
