@@ -3,7 +3,7 @@
   "version": "1.1.5",
   "author": "Parth Faladu",
   "description": "A Vue.js wrapper component for jquery datatable.",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/VueJsDatatable.umd.js",
   "module": "dist/VueJsDatatable.esm.js",
   "unpkg": "dist/VueJsDatatable.min.js",
